@@ -1,422 +1,563 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PortFolio - Dhruv Varshney</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="shortcut icon" href="./my-favicon-2.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./my-favicon-1.jpeg" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
     <div id="wrapper">
+      <div class="container">
+        <div class="navbar">
+          <div class="nav-logo">
+            <img src="./images/userAsset/dl-6.png" class="logo" />
+            <div class="logo-text">hruv Varshney</div>
+          </div>
+          <div class="nav-items">
+            <div><a href="#experience">Experience</a></div>
+            <div><a href="#projects">Projects</a></div>
+            <div><a href="#skills">Skills</a></div>
+            <div><a href="#contactme">Contact Me</a></div>
+          </div>
+        </div>
+        <div class="hero-section">
+          <div class="absolute faded-text">Dhruv VarshneY</div>
+
+          <div class="hs-left">
+            <div class="hs-heading">Hi, my name is Dhruv</div>
+            <div class="hs-heading hs-subheading">
+              I am a <span class="role"></span>
+            </div>
+            <div class="hs-desc">
+              Full-stack developer with around 2.5+ years of experience building
+              scalable web and mobile applications using React, Next.js, React
+              Native, Node.js, and GraphQL. I focus on creating high-performance
+              user experiences and delivering reliable, production-ready
+              systems.
+            </div>
+            <div id="resume-btn">
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/dhruv-varshney9316/"
+                  target="_blank"
+                >
+                  <div class="btn-hire" id="btn">Hire Me</div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://drive.google.com/file/d/1NNaUocYQ6zeWja2grHfFGqlmrvhAhgCt/view"
+                  target="_blank"
+                >
+                  <div class="btn-hire" id="btn">
+                    <i class="fa-solid fa-download"></i>
+                    Resume
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-section" id="experience">
+        <h2 class="page-header">Experience</h2>
+        <div class="exp-timeline">
+          <div class="exp-card">
+            <div class="exp-dot"></div>
+            <div class="exp-meta">
+              <div>
+                <div class="exp-role">Software Engineer</div>
+                <div class="exp-company">Iesoft Technologies</div>
+                <div class="exp-location">Hyderabad, India (Remote)</div>
+              </div>
+              <div class="exp-period">Aug 2024 – Present</div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Built a cross-project <strong>Design System</strong> library
+                (20+ UI components with shimmers) using
+                <strong>React Native</strong> + <strong>Storybook</strong>,
+                boosted UI reuse by <strong>35%</strong> and published to npm.
+              </li>
+              <li>
+                Engineered full-stack features using <strong>Nuxt3/Vue</strong>,
+                <strong>NestJS</strong>, and <strong>GraphQL</strong> across 5+
+                modules, reduced development cycle time by
+                <strong>25%</strong> via reusable architecture and shared
+                components.
+              </li>
+              <li>
+                Optimized data-heavy screens with infinite scroll,
+                <strong>Elasticsearch</strong> based multi-filter search,
+                reduced load time and improved UX responsiveness by
+                <strong>30%</strong>.
+              </li>
+              <li>
+                Strengthened platform stability by resolving critical bugs,
+                addressing <strong>SonarQube</strong> reported issues,
+                structured PR practices, and secure user-signature capture
+                during sign-in.
+              </li>
+            </ul>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-dot"></div>
+            <div class="exp-meta">
+              <div>
+                <div class="exp-role">Full Stack Developer Intern</div>
+                <div class="exp-company">WellnessZ</div>
+                <div class="exp-location">Amritsar, India (Remote)</div>
+              </div>
+              <div class="exp-period">Apr 2024 – Jul 2024</div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Led WellnessZ client projects using <strong>Next.js</strong>,
+                <strong>Node.js</strong>, integrating Razorpay, Calendly, and
+                Zoho Mails, increasing customer experience by
+                <strong>45%</strong>.
+              </li>
+              <li>
+                Deployed backend infrastructure on
+                <strong>AWS EC2</strong> including domain setup, Nginx and CI/CD
+                configurations, reducing deployment time by
+                <strong>40%</strong>.
+              </li>
+              <li>
+                Engineered Job Schedulers for various automation processes,
+                improving overall system efficiency by <strong>50%</strong>.
+              </li>
+              <li>
+                Augmented features in WellnessZ Site, Club, Admin Panel and
+                multiple Backends, leading to a <strong>20%</strong> user
+                engagement rise.
+              </li>
+            </ul>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-dot"></div>
+            <div class="exp-meta">
+              <div>
+                <div class="exp-role">Full Stack Developer Intern</div>
+                <div class="exp-company">Printila Services Private Limited</div>
+                <div class="exp-location">Gurugram, India (Remote)</div>
+              </div>
+              <div class="exp-period">Aug 2023 – Mar 2024</div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Built Vendor On-Boarding major feature using
+                <strong>Next.js</strong> resulting in a
+                <strong>33%</strong> reduction in onboarding time for new
+                vendors.
+              </li>
+              <li>
+                Developed over <strong>45+ RESTful APIs</strong> using
+                <strong>Node.js</strong> & <strong>Express.js</strong>, ensuring
+                robust data validation & mocha testing, improving system
+                reliability by <strong>30%</strong>.
+              </li>
+              <li>
+                Enhanced product discoverability and customer retention by 25%
+                and 20% respectively via product listing and category management
+                features.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section" id="projects">
+        <h2 class="page-header">Projects</h2>
+
+        <div class="project-container">
+          <div class="project-card" id="pj-1">
+            <div class="project-number p-n-right">01</div>
+            <div class="project-content project-content-left">
+              <div class="project-skills-container">
+                <img
+                  src="./images/stack/React.png"
+                  alt=""
+                  class="project-skill"
+                />
+                <img
+                  src="./images/stack/Express.png"
+                  alt=""
+                  class="project-skill"
+                />
+                <img
+                  src="./images/stack/MongoDB.svg"
+                  alt=""
+                  class="project-skill"
+                />
+                <img
+                  src="./images/stack/NodeJs.svg"
+                  alt=""
+                  class="project-skill"
+                />
+              </div>
+              <h2 class="project-heading">StudyNotion</h2>
+              <div class="project-subheading">
+                StudyNotion is an ed-tech platform that enables users to create,
+                consume, and rate educational content.
+              </div>
+              <div class="btn-grp">
+                <a
+                  href="https://github.com/dhruv9316/StudyNotion-Mega-Project/tree/main"
+                >
+                  <button class="btn-hire btn-project">Read More</button>
+                </a>
+
+                <a
+                  href="https://github.com/dhruv9316/StudyNotion-Mega-Project/tree/main"
+                  target="_blank"
+                >
+                  <i title="GithubLink" class="fa-brands fa-github icon"> </i>
+                </a>
+                <a
+                  href="https://study-notion-mega-project-dhruv9316.vercel.app/"
+                  target="_blank"
+                >
+                  <i title="Live Link" class="fa-solid fa-link icon"> </i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" id="pj-6">
+            <div class="project-number p-n-left">02</div>
+            <div class="project-content project-content-right">
+              <div class="project-skills-container">
+                <img
+                  src="./images/stack/HTML.png"
+                  alt=""
+                  class="project-skill"
+                />
+                <img
+                  src="./images/stack/CSS.png"
+                  alt=""
+                  class="project-skill"
+                />
+                <img
+                  src="./images/stack/Javascript.svg"
+                  alt=""
+                  class="project-skill"
+                />
+              </div>
+              <h2 class="project-heading">Dev Detective</h2>
+              <div class="project-subheading">
+                You can search profile of a valid github user.
+              </div>
+              <div class="btn-grp">
+                <a href="https://github.com/dhruv9316/dev-Detective-Project">
+                  <button class="btn-hire btn-project">Read More</button>
+                </a>
+                <a
+                  href="https://github.com/dhruv9316/dev-Detective-Project"
+                  target="_blank"
+                >
+                  <i title="GithubLink" class="fa-brands fa-github icon"> </i>
+                </a>
+                <a
+                  href="https://dhruv9316.github.io/dev-Detective-Project/"
+                  target="_blank"
+                >
+                  <i title="LiveLink" class="fa-solid fa-link icon"> </i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" id="pj-5">
+            <div class="project-number p-n-right">03</div>
+            <div class="project-content project-content-left">
+              <div class="project-skills-container">
+                <img
+                  src="./images/stack/React.png"
+                  alt=""
+                  class="project-skill"
+                />
+                <!-- <img src="./images/stack/CSS.png" alt="" class="project-skill"> -->
+              </div>
+              <h2 class="project-heading">Random Gif</h2>
+              <div class="project-subheading">
+                Shows you random-gif's for chilling.
+              </div>
+              <div class="btn-grp">
+                <a href="https://github.com/dhruv9316/random-GIF-project">
+                  <button class="btn-hire btn-project">Read More</button>
+                </a>
+                <a
+                  href="https://github.com/dhruv9316/random-GIF-project"
+                  target="_blank"
+                >
+                  <i title="GithubLink" class="fa-brands fa-github icon"> </i>
+                </a>
+                <a
+                  href="https://dhruv9316-random-gif-project.netlify.app/"
+                  target="_blank"
+                >
+                  <i title="Live Link" class="fa-solid fa-link icon"> </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills" class="skills-container">
+        <div class="skill-faded-text">Skills</div>
+
+        <div class="skill-container-left">
+          <h2 class="skill-heading">
+            <span class="caps">M</span>e and
+            <br />
+            MyTech Stack
+          </h2>
+
+          <div class="skill-subHeading">
+            <p>
+              Hii Everyone! My Name is Dhruv Varshney, I graduated in 2024 with
+              a Bachelor of Technology in Computer Science.
+            </p>
+            <p>
+              I am a Full Stack Developer with around 2.5 years of experience.
+            </p>
+            <p>
+              I love to solve DATA STRUCTURES & ALGORITHM problems using C++ and
+              maintained a 500+ Days Daily Coding Challenge (POTD) streak at
+              Leet Code and GFG.
+            </p>
+            <p></p>
+          </div>
+        </div>
+        <div class="skill-container-right">
+          <img
+            src="./images/userAsset/blob vector.png"
+            class="blob-style"
+            alt=""
+          />
+
+          <img
+            src="./images/stack/HTML.png"
+            alt="HTML"
+            title="HTML"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/CSS.png"
+            alt="CSS"
+            title="CSS"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/Javascript.svg"
+            alt="Javascript"
+            title="Javascript"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/React.png"
+            alt="React"
+            title="React"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/Next.svg"
+            alt="Next"
+            title="Next"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/Redux.svg"
+            alt="Redux"
+            title="Redux"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/NodeJs.svg"
+            alt="Node"
+            title="Node"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/Tailwind.png"
+            alt="Tailwind"
+            title="Tailwind"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/Express.png"
+            alt="Express"
+            title="Express"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/Git.svg"
+            alt="Git"
+            title="Git"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/Github.svg"
+            alt="Github"
+            title="Github"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/Graphql.svg"
+            alt="Graphql"
+            title="GraphQL"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/MongoDB.svg"
+            alt="MongoDB"
+            title="MongoDB"
+            class="skills-logo"
+          />
+          <img
+            src="./images/stack/Vercel.svg"
+            alt="Vercel"
+            title="Vercel"
+            class="skills-logo"
+          />
+          <!-- <img src="./images/stack/ChartJs.svg" alt="" class="skills-logo" /> -->
+          <!-- <img src="./images/stack/Bash.svg" alt="" class="skills-logo" /> -->
+          <!-- <img src="./images/stack/Docker.svg" alt="" class="skills-logo" /> -->
+          <!-- <img src="./images/stack/K8s.svg" alt="" class="skills-logo" /> -->
+        </div>
+      </div>
+
+      <div class="contact-us-form-container" id="contactme">
         <div class="container">
-            <div class="navbar">
-                <div class="nav-logo">
-                    <img src="./images/userAsset/dl-6.png" class="logo">
-                    <div class="logo-text">hruv Varshney</div>
-                </div>
-                <div class="nav-items">
-                    <div><a href="#projects">Projects</a></div>
-                    <div><a href="#skills">Skills</a></div>
-                    <div><a href="#contactme">Contact Me</a></div>
-                </div>
-            </div>    
-            <div class="hero-section">
-                <div class="absolute faded-text">Dhruv VarshneY </div>
-                <div class="hs-left">
-                    <div class="hs-heading">Hii, My name is Dhruv</div>
-                    <div class="hs-heading hs-subheading">
-                        I am a <span class="role"></span>
-                    </div>
-                    <div class="hs-desc">
-                        This website serves as my online resume and showcases all of the skills I have acquired thus far in the field of web development (MERN Stack).
-                    </div>
-                    <div id="resume-btn">
-                        <div>
-                            <a href="https://www.linkedin.com/in/dhruv-varshney9316/" target="_blank">
-                                <div class="btn-hire" id="btn">
-                                    Hire Me
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://drive.google.com/file/d/1NNaUocYQ6zeWja2grHfFGqlmrvhAhgCt/view" target="_blank">
-                                <div class="btn-hire" id="btn">
-                                    <i class="fa-solid fa-download"></i>
-                                    Resume
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
-                <div class="hs-right">
-                    <div class="absolute icons icon-dot"> 
-                        <img src="./images/userAsset/dots.png" id="dot" alt="">
-                    </div>
-                    <div class="absolute icons icon-cube"> 
-                        <img src="./images/userAsset/cube.png" id="cube" alt="">
-                    </div>
-                    <div class="absolute icons icon-circle"> 
-                        <img src="./images/userAsset/circle.png" id="circle" alt="">
-                    </div>
-                    <div class="absolute icons icon-zigzags"> 
-                        <img src="./images/userAsset/zigzags.png" id="zigzags" alt="">
-                    </div>
-                    <div class="absolute icons icon-plus"> 
-                        <img src="./images/userAsset/plus.png" id="plus" alt="">
-                    </div>
-                    <div class="user-img"> 
-                        <!-- <img src="./images/userAsset/mypic1.jpg" alt=""> -->
-                        <img src="./images/userAsset/WhatsApp Image 2023-07-10 at 8.25.39 PM.jpeg" alt="">
-                    </div>
-                </div>
-            </div>
+          <h1 class="contact-us-heading">Contact Me</h1>
+          <h3 class="contact-us-subheading">
+            Suggestion, thoughts or any question?
+          </h3>
         </div>
 
-        <div class="project-section" id="projects">
-            <h2 class="page-header">
-                Projects                         
-            </h2>
-            <div class="project-container">
-                <div class="project-card" id="pj-1">
-                    <div class="project-number p-n-right">01</div>
-                    <div class="project-content project-content-left">
-                        <div class="project-skills-container">
-                            <img src="./images/stack/React.png" alt="" class="project-skill">
-                            <img src="./images/stack/Express.png" alt="" class="project-skill">
-                            <img src="./images/stack/MongoDB.svg" alt="" class="project-skill">
-                            <img src="./images/stack/NodeJs.svg" alt="" class="project-skill">
-                        </div>
-                        <h2 class="project-heading">StudyNotion</h2>
-                        <div class="project-subheading">StudyNotion is an ed-tech platform that enables
-                            users to create, consume, and rate educational content. 
-                        </div>
-                        <div class="btn-grp">
-                            <a href="https://github.com/dhruv9316/StudyNotion-Mega-Project/tree/main">
-                                <button class="btn-hire btn-project">Read More</button>
-                            </a>
-                            
-                            <a href="https://github.com/dhruv9316/StudyNotion-Mega-Project/tree/main"
-                            target="_blank">
-                            <i title="GithubLink" class="fa-brands fa-github icon">
-                            </i>
-                            </a>
-                            <a href="https://study-notion-mega-project-dhruv9316.vercel.app/"
-                            target="_blank">
-                            <i title="Live Link" class="fa-solid fa-link icon">
-                            </i>
-                            </a>
-                        </div>
-                    </div>
+        <div class="form-mini-container">
+          <form class="form" action="">
+            <div class="form-field-container">
+              <input
+                type="text"
+                class="formfield"
+                id=""
+                name="name"
+                placeholder="Enter your name"
+              />
 
-                </div>
+              <input
+                type="email"
+                class="formfield"
+                id=""
+                name="email"
+                placeholder="Enter your email"
+              />
 
-                <div class="project-card" id="pj-2">
-                    <div class="project-number p-n-left">02</div>
-                    <div class="project-content project-content-right">
-                        <div class="project-skills-container">
-                            <img src="./images/stack/React.png" alt="" class="project-skill">
-                            <!-- <img src="./images/stack/CSS.png" alt="" class="project-skill"> -->
-                        </div>
-                        <h2 class="project-heading">Plan With Me</h2>
-                        <div class="project-subheading">You can remove those
-                            destinations that you dont like.                     
-                        </div>
-                        <div class="btn-grp">
-                            <a href="https://github.com/dhruv9316/plan-with-Dhruv">
-                                <button class="btn-hire btn-project">Read More</button>
-                            </a>
-                            <a href="https://github.com/dhruv9316/plan-with-Dhruv"
-                            target="_blank">
-                            <i title="GithubLink" class="fa-brands fa-github icon">
-                            </i>
-                            </a>
-                            <a href="https://dhruv9316-plan-with-dhruv.netlify.app/"
-                            target="_blank">
-                            <i title="LiveLink" class="fa-solid fa-link icon">
-                            </i>
-                            </a>
-                        </div>
-                    </div>
+              <input
+                type="text"
+                class="formfield"
+                id=""
+                name="subject"
+                placeholder="Enter the subject"
+              />
 
-                </div>
-
-                <div class="project-card" id="pj-3">
-                    <div class="project-number p-n-right">03</div>
-                    <div class="project-content project-content-left">
-                        <div class="project-skills-container">
-                            <img src="./images/stack/React.png" alt="" class="project-skill">
-                            <!-- <img src="./images/stack/CSS.png" alt="" class="project-skill"> -->
-                        </div>
-                        <h2 class="project-heading">Top Courses</h2>
-                        <div class="project-subheading">You can filter out your favourite courses
-                            on the basis of catagories.
-                        </div>
-                        <div class="btn-grp">
-                            <a href="https://github.com/dhruv9316/top-Courses-Project">
-                                <button class="btn-hire btn-project">Read More</button>
-                            </a>
-                            <a href="https://github.com/dhruv9316/top-Courses-Project"
-                            target="_blank">
-                            <i title="GithubLink" class="fa-brands fa-github icon">
-                            </i>
-                            </a>
-                            <a href="https://dhruv9316-top-courses.netlify.app/"
-                            target="_blank">
-                            <i title="Live Link" class="fa-solid fa-link icon">
-                            </i>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="project-card" id="pj-4">
-                    <div class="project-number p-n-left">04</div>
-                    <div class="project-content project-content-right">
-                        <div class="project-skills-container">
-                            <img src="./images/stack/HTML.png" alt="" class="project-skill">
-                            <img src="./images/stack/Tailwind.png" alt="" class="project-skill">
-                        </div>
-                        <h2 class="project-heading">Razorpay Clone</h2>
-                        <div class="project-subheading">A fully RESPONSIVE Razorpay Website Landing Page Clone.
-                        </div>
-                        <div class="btn-grp">
-                            <a href="https://github.com/dhruv9316/RazorPay-Clone-Project">
-                                <button class="btn-hire btn-project">Read More</button>
-                            </a>
-                            <a href="https://github.com/dhruv9316/RazorPay-Clone-Project"
-                            target="_blank">
-                            <i title="GithubLink" class="fa-brands fa-github icon">
-                            </i>
-                            </a>
-                            <a href="https://dhruv9316-razorpay-clone.netlify.app/"
-                            target="_blank">
-                            <i title="LiveLink" class="fa-solid fa-link icon">
-                            </i>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="project-card" id="pj-5">
-                    <div class="project-number p-n-right">05</div>
-                    <div class="project-content project-content-left">
-                        <div class="project-skills-container">
-                            <img src="./images/stack/React.png" alt="" class="project-skill">
-                            <!-- <img src="./images/stack/CSS.png" alt="" class="project-skill"> -->
-                        </div>
-                        <h2 class="project-heading">Random Gif</h2>
-                        <div class="project-subheading">Shows you random-gif's for chilling.
-                        </div>
-                        <div class="btn-grp">
-                            <a href="https://github.com/dhruv9316/random-GIF-project">
-                                <button class="btn-hire btn-project">Read More</button>
-                            </a>
-                            <a href="https://github.com/dhruv9316/random-GIF-project"
-                            target="_blank">
-                            <i title="GithubLink" class="fa-brands fa-github icon">
-                            </i>
-                            </a>
-                            <a href="https://dhruv9316-random-gif-project.netlify.app/"
-                            target="_blank">
-                            <i title="Live Link" class="fa-solid fa-link icon">
-                            </i>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="project-card" id="pj-6">
-                    <div class="project-number p-n-left">06</div>
-                    <div class="project-content project-content-right">
-                        <div class="project-skills-container">
-                            <img src="./images/stack/HTML.png" alt="" class="project-skill">
-                            <img src="./images/stack/CSS.png" alt="" class="project-skill">
-                            <img src="./images/stack/Javascript.svg" alt="" class="project-skill">
-                        </div>
-                        <h2 class="project-heading">Dev Detective</h2>
-                        <div class="project-subheading">You can search profile of a valid github user.
-                        </div>
-                        <div class="btn-grp">
-                            <a href="https://github.com/dhruv9316/dev-Detective-Project">
-                                <button class="btn-hire btn-project">Read More</button>
-                            </a>
-                            <a href="https://github.com/dhruv9316/dev-Detective-Project"
-                            target="_blank">
-                            <i title="GithubLink" class="fa-brands fa-github icon">
-                            </i>
-                            </a>
-                            <a href="https://dhruv9316.github.io/dev-Detective-Project/"
-                            target="_blank">
-                            <i title="LiveLink" class="fa-solid fa-link icon">
-                            </i>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                class="formfield formfield-textarea"
+                placeholder="Enter your message"
+              ></textarea>
             </div>
+            <div>
+              <button class="btn-hire" type="submit" id="submit-btn">
+                Send Message
+                <i class="submit-icon fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
         </div>
+      </div>
 
-        <div id="skills" class="container skills-container">
-            <div class="skill-faded-text">Skills</div>
-            <div class="skill-container-left">
-                <h2 class="skill-heading">
-                    <span class="caps">M</span>e and
-                    <br>
-                    MyTech Stack
-                  </h2>
-      
-                <div class="skill-subHeading">
-                    <p>
-                      Hii Everyone!! My Name is Dhruv Varshney 
-                     </p>
-                    <p>  
-                      I am a M.E.R.N. Stack Developer.
-                    </p>                   
-                    <p>
-                    I love to solve DATA STRUCTURES & ALGORITHM problems using C++
-                    <br> & <br>
-                    I am pursuing a Bachelor of Technology in Computer Science moving forward towards Final Year.
-                    </p>
-                    <!-- <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
-                      doloremque aspernatur, maiores voluptatum minus laudantium?
-                      Perspiciatis accusamus minima porro dolores necessitatibus, magni
-                      dolorem et qui veniam nulla sequi molestiae maxime.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quidem
-                      quos ullam veritatis voluptates tenetur qui ipsa nulla culpa itaque?
-                    </p> -->
-                </div>
-                    
+      <footer>
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-faded-text">Dhruv VarshneY</div>
+
+            <div class="link-wrapper">
+              <div><a href="#experience">Experience</a></div>
+              <div><a href="#projects">Projects</a></div>
+              <div><a href="#skills">Skills</a></div>
+              <div><a href="#contactme">Contact Me</a></div>
             </div>
-            <div class="skill-container-right">
-                <img src="./images/userAsset/blob vector.png" class="blob-style" alt="" >
 
-                <img src="./images/stack/HTML.png" alt="" class="skills-logo">
-                <img src="./images/stack/CSS.png" alt="" class="skills-logo" >
-                <img src="./images/stack/Javascript.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/React.png" alt="" class="skills-logo" />
-                <img src="./images/stack/NodeJs.svg" alt="" class="skills-logo" />
-                <!-- <img src="./images/stack/Next.svg" alt="" class="skills-logo" /> -->
-                <img src="./images/stack/Redux.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/Tailwind.png" alt="" class="skills-logo" />
-                <!-- <img src="./images/stack/Bootstrap.svg" alt="" class="skills-logo" /> -->
-                <!-- <img src="./images/stack/MaterialUI.svg" alt="" class="skills-logo" /> -->
-                <img src="./images/stack/Express.png" alt="" class="skills-logo" /> 
-                <img src="./images/stack/Git.svg" alt="" class="skills-logo" >
-                <img src="./images/stack/Github.svg" alt="" class="skills-logo" >
-                <!-- <img src="./images/stack/Graphql.svg" alt="" class="skills-logo" /> -->
-                <img src="./images/stack/MongoDB.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/Vercel.svg" alt="" class="skills-logo" />
-                <!-- <img src="./images/stack/ChartJs.svg" alt="" class="skills-logo" /> -->
-                <!-- <img src="./images/stack/Bash.svg" alt="" class="skills-logo" /> -->
-                <!-- <img src="./images/stack/Docker.svg" alt="" class="skills-logo" /> -->
-                <!-- <img src="./images/stack/K8s.svg" alt="" class="skills-logo" /> -->
+            <div class="icon-wrapper">
+              <a
+                href="https://drive.google.com/file/d/1NNaUocYQ6zeWja2grHfFGqlmrvhAhgCt/view"
+                target="_blank"
+                title="Resume"
+              >
+                <i class="fa-solid fa-file-lines icon"></i>
+              </a>
+              <a
+                href="https://github.com/dhruv9316/"
+                target="_blank"
+                title="GitHub"
+              >
+                <i class="fa-brands fa-github icon"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/dhruv-varshney9316/"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin icon"></i>
+              </a>
+              <a href="mailto:vdhruv876@gmail.com" target="_blank" title="Mail">
+                <i class="fa-regular fa-envelope icon"></i>
+              </a>
+              <a
+                href="https://leetcode.com/vdhruv9316/"
+                target="_blank"
+                title="LeetCode"
+              >
+                <i class="fa-solid fa-code icon"></i>
+              </a>
             </div>
-            
-        
-
-        
+          </div>
         </div>
-
-        <div class="contact-us-form-container" id="contactme">
-                <div class="container">
-                    <h1 class="contact-us-heading">Contact Me</h1>
-                    <h3 class="contact-us-subheading">Suggestion, thoughts or any question?</h3>
-                </div>
-
-                <div class="form-mini-container">
-                    <form class="form" action="">
-                        <div class="form-field-container">
-                            <input type="text" class="formfield" id="" 
-                            name="name" placeholder="Enter your name">
-
-                            <input type="email" class="formfield" id="" 
-                            name="email" placeholder="Enter your email">
-
-                            <input type="text" class="formfield" id="" 
-                            name="subject" placeholder="Enter the subject">
-
-                            <textarea name="message" id="" cols="30" rows="10"
-                            class="formfield formfield-textarea"
-                             placeholder="Enter your message"></textarea>
-
-                        </div>
-                        <div>
-                            <button class="btn-hire" type="submit" id="submit-btn">
-                                Send Message
-                                <i class="submit-icon fa-solid fa-paper-plane"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-        </div>
-
-        <footer>
-            <div class="container">
-                <div class="footer-wrapper">
-                    <div class="footer-faded-text">
-                        Dhruv VarshneY
-                    </div>
-
-                    <div class="link-wrapper">
-                        <div><a href="#projects">Projects</a></div>
-                        <div><a href="#skills">Skills</a></div>
-                        <div><a href="#contactme">Contact Me</a></div>
-                    </div>
-
-                    <div class="icon-wrapper">
-                        <a href="https://www.linkedin.com/in/dhruv-varshney9316/" 
-                        target="_blank">
-                        <i class="fa-brands fa-linkedin icon"></i>
-                        </a>
-                        <a href="https://github.com/dhruv9316/" 
-                        target="_blank">
-                        <i class="fa-brands fa-github icon"></i>
-                        </a>
-                        <!-- <i class="fa-brands fa-twitter icon"></i> -->
-                        <a href="https://instagram.com/dhruv.9316?igshid=YmMyMTA2M2Y=" 
-                        target="_blank">
-                        <i class="fa-brands fa-instagram icon"></i>
-                        </a>
-                        <!-- <i class="fa-regular fa-envelope icon"></i> -->
-                    </div>
-
-                </div>
-            </div>
-        </footer>
-
-    </div>    
-
-
+      </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
     <script>
       var typeData = new Typed(".role", {
-        strings: [
-        //   "Full Stack Developer",
-          "M.E.R.N. Stack Developer",
-        //   "UI-UX Designer",
-        //   "Backend Developer",
-          "C++ Coder",
-        ],
+        strings: ["Software Engineer", "Full Stack Developer", "C++ Coder"],
         loop: true,
         typeSpeed: 100,
         backSpeed: 80,
         backDelay: 1000,
       });
     </script>
-</body>
+  </body>
 </html>
+
+<!--
+mobile css fixes 
+-->
