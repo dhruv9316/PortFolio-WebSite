@@ -16,19 +16,50 @@
 
   <body>
     <div id="wrapper">
-      <div class="container">
-        <div class="navbar">
+      <div class="nav-wrapper">
+        <div class="navbar" id="navbar">
           <div class="nav-logo">
             <img src="./images/userAsset/dl-6.png" class="logo" />
             <div class="logo-text">hruv Varshney</div>
           </div>
-          <div class="nav-items">
-            <div><a href="#experience">Experience</a></div>
-            <div><a href="#projects">Projects</a></div>
-            <div><a href="#skills">Skills</a></div>
-            <div><a href="#contactme">Contact Me</a></div>
+          <ul class="nav-items">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/dhruv-varshney9316/"
+                target="_blank"
+                class="nav-cta"
+                >Hire Me</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <a
+            href="https://www.linkedin.com/in/dhruv-varshney9316/"
+            target="_blank"
+            class="mobile-cta"
+            >Hire Me →</a
+          >
+        </div>
+      </div>
+
+      <div class="container" id="about">
         <div class="hero-section">
           <div class="absolute faded-text">Dhruv VarshneY</div>
 
@@ -77,7 +108,12 @@
             <div class="exp-meta">
               <div>
                 <div class="exp-role">Software Engineer</div>
-                <div class="exp-company">Iesoft Technologies</div>
+                <a
+                  class="exp-company"
+                  href="https://iesoftek.com/"
+                  target="_blank"
+                  >Iesoft Technologies</a
+                >
                 <div class="exp-location">Hyderabad, India (Remote)</div>
               </div>
               <div class="exp-period">Aug 2024 – Present</div>
@@ -116,7 +152,12 @@
             <div class="exp-meta">
               <div>
                 <div class="exp-role">Full Stack Developer Intern</div>
-                <div class="exp-company">WellnessZ</div>
+                <a
+                  class="exp-company"
+                  href="https://www.wellnessz.in/"
+                  target="_blank"
+                  >WellnessZ</a
+                >
                 <div class="exp-location">Amritsar, India (Remote)</div>
               </div>
               <div class="exp-period">Apr 2024 – Jul 2024</div>
@@ -151,7 +192,12 @@
             <div class="exp-meta">
               <div>
                 <div class="exp-role">Full Stack Developer Intern</div>
-                <div class="exp-company">Printila Services Private Limited</div>
+                <a
+                  class="exp-company"
+                  href="https://www.printila.in/"
+                  target="_blank"
+                  >Printila Services Private Limited</a
+                >
                 <div class="exp-location">Gurugram, India (Remote)</div>
               </div>
               <div class="exp-period">Aug 2023 – Mar 2024</div>
@@ -441,7 +487,7 @@
         </div>
       </div>
 
-      <div class="contact-us-form-container" id="contactme">
+      <div class="contact-us-form-container" id="contact">
         <div class="container">
           <h1 class="contact-us-heading">Contact Me</h1>
           <h3 class="contact-us-subheading">
@@ -499,13 +545,7 @@
         <div class="container">
           <div class="footer-wrapper">
             <div class="footer-faded-text">Dhruv VarshneY</div>
-
-            <div class="link-wrapper">
-              <div><a href="#experience">Experience</a></div>
-              <div><a href="#projects">Projects</a></div>
-              <div><a href="#skills">Skills</a></div>
-              <div><a href="#contactme">Contact Me</a></div>
-            </div>
+            <p class="copyright-text">© 2026 Dhruv Varshney</p>
 
             <div class="icon-wrapper">
               <a
@@ -554,10 +594,32 @@
         backSpeed: 80,
         backDelay: 1000,
       });
+
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", function () {
+          this.classList.toggle("open");
+          document.getElementById("mobileMenu").classList.toggle("open");
+        });
+
+      // Active link highlight on click
+      document.querySelectorAll(".nav-items a, .mobile-menu a").forEach((a) => {
+        a.addEventListener("click", function () {
+          document
+            .querySelectorAll(".nav-items a")
+            .forEach((x) => x.classList.remove("active"));
+          this.classList.add("active");
+          document.getElementById("mobileMenu").classList.remove("open");
+          document.getElementById("hamburger").classList.remove("open");
+        });
+      });
+
+      // Shadow on scroll
+      window.addEventListener("scroll", function () {
+        document
+          .getElementById("navbar")
+          .classList.toggle("scrolled", window.scrollY > 10);
+      });
     </script>
   </body>
 </html>
-
-<!--
-mobile css fixes 
--->
